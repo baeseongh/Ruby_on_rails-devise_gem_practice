@@ -1,0 +1,37 @@
+<h1>Articles</h1>  
+
+<p>
+  <strong>Title:</strong>
+  <%= @article.title %>
+</p>
+<p>
+  <strong>Id:</strong>
+  <%= @article.id %>
+</p>
+<p>
+  <strong>Content:</strong>
+  <%= @article.content %>
+</p>
+<%# TODO: Change url %>
+<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %>
+
+<!--comment_show-->
+<p>
+<strong>Comment</strong>
+<%= @article.comments.count %>
+</p>
+<% @article.comments.each do |c| %>
+  <p><%= c.content %></p>
+  <a href="/comments/<%= c.id %>" data-confirm='Are you sure?' data-method='delete'>delete</a>
+  <hr/>
+<% end %>
+
+<!--comment_input-->
+<form action="/comments" method='POST'>
+  <input type='hidden' name='authenticity_token' value='<%= @token %>'></input>
+  <input type='hidden' name='article_id' value='<%= @article.id %>'></input>
+  <textarea name='input_content'></textarea>
+  <input type='submit' value='작성'></input>
+</form>
+
