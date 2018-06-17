@@ -14,7 +14,7 @@ class ArticlesController < ApplicationController
   end
   
   def show
-    @token = form_authenticity_to
+    @token = form_authenticity_token
   end
 
   def index
