@@ -1,4 +1,4 @@
-<h1>LIKELION_6기_세션_Rails_devise_gem_연습용Wokrspace</h1>
+<h1>LIKELION_6기_세션_Rails_devise_gem_연습용_Wokrspace</h1>
 </hr>
 <ul>
      <li>C9에서 프로젝트에서 git clone하여 그대로 사용하면 됩니다.</li>
