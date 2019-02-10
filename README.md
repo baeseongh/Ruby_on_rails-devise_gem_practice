@@ -2,7 +2,7 @@
 </hr>
 <ul>
      <li>C9에서 프로젝트에서 git clone하여 그대로 사용하면 됩니다.</li>
-     <li>2018년 멋쟁이사자처럼 6기 rails devise 교육자료와 호완</li>
+     <li>2018년 멋쟁이사자처럼 6기 rails devise 교육자료와 호환</li>
 </ul>
 </hr>
 
